@@ -1,0 +1,84 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aqua;
+}
+
+
+
+/* stopwatch_display_cointainer */
+.cointainer{
+    width: 600px;
+    height: 300px;
+    border: 1px solid black;   
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 5%;
+    /* background: linear-gradient(45deg,rgb(243, 129, 227),rgb(230, 88, 230)); */
+    background-image: url(https://wallpapercave.com/wp/wp12706881.jpg);
+    background-position: center;
+    background-size: cover;    
+    padding: 50px;
+    box-shadow: 0 0 40px rgb(208, 20, 20);
+    color: salmon;
+    font-family: math;
+}
+
+
+/* Stopwatch-display */
+.timer-display{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5%;
+    font-size: 3em;
+    padding: 30px;
+    box-shadow: 0 0 20px blue;
+}
+
+/* buttons_cointainer */
+.buttons{
+    width: 90%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* start-pause-reset_BUTTONS */
+.buttons button{
+    width: 120px;
+    height: 45px;
+    font-size: 1.5em;
+    font-family: fangsong;
+    border-radius: 10px;
+    color: rgb(14, 15, 15);
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+
+.buttons button:nth-child(1){
+    background-color: rgb(94, 246, 94);
+}
+
+.buttons button:nth-child(2){
+    background-color: rgb(235, 29, 29);
+}
+
+.buttons button:nth-child(3){
+    background-color: rgb(239, 233, 32);
+}
+
+/* buton_hover-event */
+.buttons button:hover{
+    box-shadow: 0 0 20px rgb(20, 19, 20);
+}
